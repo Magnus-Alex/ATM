@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="bank">
+        <article class="bank__top">
+            <div class="bank__top--atm">
+                <div class="atm__display">
+                    <div id="atm__output" class="atm__display--output">
+                        Introduzca la cantidad que desea retirar.    
+                    </div>
+                    <form id="input" name="input" class="atm__display--label" for="money_input">
+                        <input id="money_input" name="money_input" class="label--input" type="number" placeholder="ej. 2800" />
+                    </form>
+                </div>
+                <div class="bank__top--keyboard">
+                    <div class="keyboard--button button-1" id="button_1">
+                        1
+                    </div>
+                    <div class="keyboard--button button-2" id="button_2">
+                        2
+                    </div>
+                    <div class="keyboard--button button-3" id="button_3">
+                        3
+                    </div>
+                    <div class="keyboard--button button-4" id="button_4">
+                        4
+                    </div>
+                    <div class="keyboard--button button-5" id="button_5">
+                        5
+                    </div>
+                    <div class="keyboard--button button-6" id="button_6">
+                        6
+                    </div>
+                    <div class="keyboard--button button-7" id="button_7">
+                        7
+                    </div>
+                    <div class="keyboard--button button-8" id="button_8">
+                        8
+                    </div>
+                    <div class="keyboard--button button-9" id="button_9">
+                        9
+                    </div>
+                    <div class="keyboard--button button-delete" id="button_delete">
+                        -
+                    </div>
+                    <div class="keyboard--button button-yellow" id="button_0">
+                        0
+                    </div>
+                    <div class="keyboard--button button-accept" id="button_accept">
+                        -
+                    </div>
+                </div>
+                <img class="atm__background" src="./assets/ATM.png" alt="An image of an A-T-M and a card">
+            </div>
+        </article>
+        <article class="bank__top--condition">
+            <h2 class="condition__title">
+                Este cajero cuenta con:
+            </h2>
+            <span class="condition__line">
+                <div class="condition__line-item" id="total_container"> $0 </div>
+                <div class="condition__line-item"> En total</div>
+            </span>
+            <span class="condition__line">
+                <div class="condition__line-item" id="1000_container"> 0 </div>
+                <div class="condition__line-item"> $1000</div>
+            </span>
+            <span class="condition__line">
+                <div class="condition__line-item" id="500_container"> 0 </div>
+                <div class="condition__line-item"> $500</div>
+            </span>
+            <span class="condition__line">
+                <div class="condition__line-item" id="200_container"> 0 </div>
+                <div class="condition__line-item"> $200</div>
+            </span>
+            <span class="condition__line">
+                <div class="condition__line-item" id="100_container"> 0 </div>
+                <div class="condition__line-item"> $100</div>
+            </span>
+        </article>
+        <article class="bank__bottom">
+            <div id="cash_container" class="bank__bottom--container">
+                <!-- <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000">
+                <img src="./assets/mil-pesos.png" class="cash" alt="Imagen de un billete de 1000"> -->
+            </div>
+        </article>
+    </main>
+    <script src="./class_billete.js"></script>
+    <script src="./script.js"></script>
+    <script src="./algorithm.js"></script>
+    <script src="./buttons_script.js"></script>
+</body>
+</html>

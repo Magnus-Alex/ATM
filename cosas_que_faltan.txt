@@ -1,0 +1,18 @@
+PlatziBank, el banco que en lugar de hacerte más probre te hace ganar de 2 a 10x despés de un 
+año con ellos. 
+
+Hacer que los billetes se representen visualmente, con algún tipo de imagen. (Listo)
+
+Hacer que las respuestas en texto se muestren en la pantalla de al imagen del cajero automático 
+esto lo puedo lograr con un contenedor vacío colocado en posición absoluta justo enfrente de la 
+pantalla. También estará bien crear un contenedor posicionado que cubra la imagen para que pueda 
+agrandarla y achicarla y el contenedor del texto siempre esté posicionado de manera relativa con 
+porcentajes a la imágen. (Listo)
+
+Crear una pequeña interfaz al lado del cajero (o adentro, ese dependerá del espacio), para poder 
+ver en tiempo real, cada vez que saquemos dinero, cuánto dinero tiene en total el cajero todavía 
+y cuántos billetes de cada denominación le quedan. (Listo)
+
+*Agregar una frase después de entregar dinero preguntando si quiere donar 100 a quién sabe qué, y 
+si dice el usuario que no, escribir en pantalla "A, pues váyase alv...", y si dice que sí, pues 
+restar los 100 a su cuenta.

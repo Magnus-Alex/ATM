@@ -1,0 +1,298 @@
+:root {
+    --display-font-color: #FFF;
+    --display-font-family: monospace;
+    --display-font-size: 2.6vw;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical {
+    width:10px;
+}
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+    display: none;
+} 
+body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+html {
+    font-size: 62.5%;
+}
+.bank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank__top {
+    /* border: red 2px dotted; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.bank__top--atm {
+    /* border: blue 2px dotted; */
+    position: relative;
+    width: 80vw;
+}
+.atm__display {
+    position: absolute;
+    top: 6%;
+    left: 10.5%;
+
+    width: 44.2%;
+    height: 52.2%;
+    /* border: white 2px dotted; */
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.atm__display--output {
+    width: 95%;
+
+    font-family: var(--display-font-family);
+    color: var(--display-font-color);
+    font-size: var(--display-font-size);
+}
+.atm__display--label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 25%;
+    /* border: lightgray 2px dotted; */
+}
+.label--input {
+    border: white 0.25vw solid;
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.0);
+
+    width: 80%;
+    height: 100%;
+
+    font-family: var(--display-font-family);
+    font-size: calc(1.8 * var(--display-font-size));
+    color: var(--display-font-color);
+
+    outline: none;
+
+    text-align: center;
+}
+.label--input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+.label--input::-webkit-inner-spin-button,
+.label--input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.bank__top--condition {
+    position: absolute;
+    top: 1.7%;
+    left: 66%;
+
+    width: 24%;
+    height: 22.5vw;
+
+    /* border: black 2px dotted; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: calc(0.6 * var(--display-font-size));
+    font-family: var(--display-font-family);
+
+    background-color: rgb(216, 152, 57);
+    border-radius: 20px;
+}
+.condition__title {
+    font-size: calc(0.7 *  var(--display-font-size));
+}
+.condition__line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.condition__line-item {
+    background-color: rgb(243, 244, 243);
+    width: 8vw;
+    height: 3vw;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank__top--keyboard {
+    position: absolute;
+    width: 20.8%;
+    height: 30.5%;
+    top: 68%;
+    left: 22.05%;
+
+    /* border: white 2px dotted; */
+    border-radius: 20px;
+}
+.keyboard--button {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 19%;
+    height: 17%;
+    /* border: dodgerblue 1px dotted; */
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--display-font-family);
+    font-size: var(--display-font-size);
+    color: rgba(0, 0, 0, 0.5);
+}
+.keyboard--button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 250ms;
+    cursor: pointer;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+.keyboard--button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 200ms;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+.button-1 {
+    top: 73.8%;
+    left: 11.3%;
+}
+.button-2 {
+    top: 73.8%;
+    left: 41.55%;
+}
+.button-3 {
+    top: 73.8%;
+    left: 72%;
+}
+.button-4 {
+    top: 52%;
+    left: 11.3%;
+}
+.button-5 {
+    top: 52%;
+    left: 41.55%;
+}
+.button-6 {
+    top: 52%;
+    left: 72%;
+}
+.button-7 {
+    top: 30.45%;
+    left: 11.3%;
+}
+.button-8 {
+    top: 30.45%;
+    left: 41.55%;
+}
+.button-9 {
+    top: 30.45%;
+    left: 72%;
+}
+.button-delete {
+    top: 9%;
+    left: 11.3%;
+}
+.button-yellow {
+    top: 9%;
+    left: 41.55%;
+}
+.button-accept {
+    top: 9%;
+    left: 72%;
+}
+
+.atm__background {
+    width: 100%;
+}
+
+.bank__bottom {
+    width: 80vw;
+    height: 25vw;
+
+    border: rgb(30, 82, 118) 1vw solid;
+    border-radius: 20px;
+
+    overflow: auto;
+    margin-bottom: 1vw;
+
+    background-color: rgb(60, 63, 64);
+}
+
+.bank__bottom::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.bank__bottom::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.bank__bottom::-webkit-scrollbar-button:increment,.bank__bottom::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.bank__bottom::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.bank__bottom::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.bank__bottom::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.bank__bottom--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.cash {
+    width: 22%;
+    margin: 1vw;
+}
